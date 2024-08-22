@@ -34,7 +34,7 @@ export default function Growthrate() {
  
   const getData = async () => {
     try {
-      const response = await axios.get(`http://localhost:5000/data/growthrate`);
+      const response = await axios.get(`https://shopifydataviz-backend.onrender.com/data/growthrate`);
       const data = response.data.growthRates;
       console.log(data);
 

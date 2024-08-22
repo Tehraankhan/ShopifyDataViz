@@ -48,7 +48,7 @@ export default function Totalsale() {
   const getData = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/data/totalsale/${selectedValue}`
+        `https://shopifydataviz-backend.onrender.com/data/totalsale/${selectedValue}`
       );
       const data = response.data.result;
 

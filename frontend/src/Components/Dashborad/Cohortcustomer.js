@@ -42,7 +42,7 @@ export default function Cohortcustomer() {
 
   const getData = async () => {
     try {
-      const response = await axios.get(`http://localhost:5000/data/cohort`);
+      const response = await axios.get(`https://shopifydataviz-backend.onrender.com/data/cohort`);
       const data = response.data.result;
       console.log(data);
 

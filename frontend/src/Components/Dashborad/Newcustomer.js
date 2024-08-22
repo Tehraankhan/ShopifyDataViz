@@ -39,7 +39,7 @@ export default function Newcustomer() {
 
   const getData = async () => {
     try {
-      const response = await axios.get(`http://localhost:5000/data/customer2/${selectedValue}`);
+      const response = await axios.get(`https://shopifydataviz-backend.onrender.com/data/customer2/${selectedValue}`);
       const data = response.data.result;
       console.log(data);
 

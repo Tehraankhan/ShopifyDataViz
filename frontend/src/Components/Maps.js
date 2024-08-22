@@ -20,7 +20,7 @@ const CustomerMap = () => {
   useEffect(() => {
     const fetchCustomers = async () => {
       try {
-        const response = await fetch('http://localhost:5000/data/customer'); // Adjust this endpoint as needed
+        const response = await fetch('https://shopifydataviz-backend.onrender.com/data/customer'); // Adjust this endpoint as needed
         const data = await response.json();
         setTotalCount(data.length); // Set the total count of customers
         console.log(data)
